@@ -1,0 +1,18 @@
+[package]
+name = "wiseCoderTab/wxhttp"
+version = "0.1.0"
+description = "XHTTP running on Wasmer Edge using WinterJS"
+license = "MIT"
+
+[dependencies]
+"wasmer/winterjs" = "1.2"
+
+[[fs.dir]]
+source = "src"
+target = "/src"
+
+[[command]]
+name = "run"
+module = "wasmer/winterjs:winterjs"
+runner = "https://webc.org/runner/wasi"
+annotations = { wasi = { main_args = ["/src/index.js"] } }
