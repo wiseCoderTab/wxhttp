@@ -1,5 +1,5 @@
 [package]
-name = "wiseCoderTab/wxhttp"
+name = "faridaghdam/wxhttp"
 version = "0.1.0"
 description = "XHTTP running on Wasmer Edge using WinterJS"
 license = "MIT"
